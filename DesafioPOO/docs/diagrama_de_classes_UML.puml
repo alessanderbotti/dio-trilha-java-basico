@@ -1,0 +1,30 @@
+@startuml
+
+!theme blueprint
+skinparam monochrome true
+skinparam classAttributeIconSize 0
+
+scale 2
+
+interface AparelhoTelefonico {
+  +ligar(String numero)
+  +atender()
+  +iniciarCorreioVoz()
+}
+
+interface NavegadorInternet {
+  +exibirPagina(String url)
+  +adicionarNovaAba()
+  +atualizarPagina()
+}
+
+interface ReprodutorMusical {
+  +tocar()
+  +pausar()
+  +selecionarMusica(String musica)
+}
+
+class iPhone implements AparelhoTelefonico
+class iPhone implements NavegadorInternet
+class iPhone implements ReprodutorMusical
+@enduml
